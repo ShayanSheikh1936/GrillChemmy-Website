@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #e63946;
+  --secondary-color: #f1faee;
+  --accent-color: #a8dadc;
+  --dark-color: #1d3557;
+  --light-color: #ffffff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  border-radius: 0 0 18px 18px;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container-i {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.navbar-logo-i {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--light-color);
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: var(--transition);
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-item a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.navbar-item a:hover, .navbar-item a.active {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.contact-container-i {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 45%;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.contact-form button:hover {
+  background-color: #084cdf;
+}
+
+.contact-info h3 {
+  margin-bottom: 16px;
+  color: var(--accent-color);
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.contact-info a:hover {
+  color: var(--primary-color);
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .navbar-container-i {
+    flex-wrap: wrap;
+    padding: 14px 10px;
+  }
+  .contact-container-i {
+    flex-direction: column;
+  }
+}
+

@@ -141,25 +141,3 @@ label {
 .input-group span{
     color: red;
 }
-
-.login-hint {
-    background: rgba(255,255,255,0.85);
-    color: #1d3557;
-    border-left: 4px solid var(--primary-color);
-    padding: 10px 15px;
-    margin: 18px 0 0 0;
-    border-radius: 6px;
-    font-size: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.login-hint strong {
-    color: var(--primary-color);
-}
-.hint-email {
-    color: #e63946;
-    font-weight: bold;
-}
-.hint-password {
-    color: #457b9d;
-    font-weight: bold;
-}

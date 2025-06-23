@@ -1,5 +1,5 @@
 // Firebase Config
- const firebaseConfig = {
+ export const firebaseConfig = {
     apiKey: "AIzaSyBY78RGi50TDkyYFRtrXMne74E9JBwFUr8",
     authDomain: "restaurant-website-33112.firebaseapp.com",
     projectId: "restaurant-website-33112",

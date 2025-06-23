@@ -1,0 +1,583 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Premium Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-i header-container-i">
+            <a href="#" class="logo-i">Grill<span>Chemmy</span></a>
+            <nav>
+                <ul>
+                    <li class="active-tab">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="food-menu.html">Food Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login-btn-container-i">
+                <a href="login.html" class="btn login-btn">Login</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="container-i home-hero">
+            <div class="hero-content animate">
+                <h1 class="hero-title">Savor the Art of Fine Dining</h1>
+                <div class="hero-divider">
+                    <span class="hero-icon"><i class="fas fa-utensils"></i></span>
+                </div>
+                <p class="hero-subtitle">Discover a world of exquisite flavors, crafted by award-winning chefs. Every
+                    meal is a masterpiece, every moment unforgettable.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn hero-btn" data-page="food-menu">Explore Our Menu</a>
+                    <a href="#" class="btn btn-outline hero-btn-outline" data-page="foodpanda-like">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services" class="page">
+        <div class="container-i">
+            <h2 class="service-title">Our Services</h2>
+            <div class="about-container-i">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h2>Premium Dining Experience</h2>
+                    <p>At Gourmet Haven, we offer more than just a meal - we create unforgettable dining experiences.
+                        Our commitment to excellence is reflected in every aspect of our service.</p>
+                    <p>From intimate dinners to large celebrations, our team is dedicated to making your experience
+                        exceptional.</p>
+                    <div class="features">
+                        <div class="Service-1  ">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Fine Dining</h3>
+                            <p>Exquisitely prepared dishes with artistic presentation</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Seasonal tasting menus</li>
+                                <li><i class="fas fa-check-circle"></i> Private dining rooms</li>
+                                <li><i class="fas fa-check-circle"></i> Sommelier wine pairings</li>
+                                <li><i class="fas fa-check-circle"></i> Personalized service</li>
+                            </ul>
+                            <div class="service-note">
+                                <span class="service-quote-mark">“</span>
+                                Our chefs blend tradition and innovation to create unforgettable flavors for every
+                                guest.
+                                <span class="service-chef">- Chef Luca, Head Chef</span>
+                            </div>
+                        </div>
+                        <div class="Service-2  ">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Private Events</h3>
+                            <p>Host unforgettable celebrations in our elegant private spaces</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Customizable event menus</li>
+                                <li><i class="fas fa-check-circle"></i> Dedicated event coordinator</li>
+                                <li><i class="fas fa-check-circle"></i> Audio/visual equipment available</li>
+                                <li><i class="fas fa-check-circle"></i> Flexible seating arrangements</li>
+                            </ul>
+                            <div class="service-note">
+                                <span class="service-quote-mark">“</span>
+                                We take pride in making every event seamless, memorable, and tailored to your vision.
+                                <span class="service-chef">- Olivia, Event Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Menu Page -->
+    <section id="food-menu" class="page">
+        <div class="container-i">
+            <h2 class="menu-title animate">Our Menu</h2>
+
+            <div class="menu-tabs">
+                <button class="menu-tab-btn active" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab-btn" data-category="mains">Main Courses</button>
+                <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+                <button class="menu-tab-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-category active" id="appetizers">
+                <div class="menu-grid">
+                    <div class="menu-item animate">
+                        <div class="menu-item-img">
+                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_56t8BQcoWvcTF0_rHABUm_Vo1x_iTNNVitKdZZUd1wRKGkAFCC--8zIsoyqA3-pz5jgF2YBinhTpQj6zdEZ9S2FvbsBroRYEyzXHLP_z"
+                                alt="Bruschetta">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Tomato Bruschetta</h3>
+                                <span class="menu-item-price">$9.50</span>
+                            </div>
+                            <p>Traditional Italian appetizer with fresh tomatoes, basil, garlic, and olive oil on
+                                toasted bread</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-1">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Spring Rolls">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Vietnamese Spring Rolls</h3>
+                                <span class="menu-item-price">$10.00</span>
+                            </div>
+                            <p>Fresh rice paper rolls with shrimp, herbs, rice noodles & peanut dipping sauce</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-2">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Calamari">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Crispy Calamari</h3>
+                                <span class="menu-item-price">$12.50</span>
+                            </div>
+                            <p>Tender squid lightly fried with garlic aioli and lemon wedges</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-3">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Cheese Plate">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Artisan Cheese Plate</h3>
+                                <span class="menu-item-price">$14.00</span>
+                            </div>
+                            <p>Selection of local cheeses with seasonal fruits, nuts and artisan crackers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="mains">
+                <div class="menu-grid">
+                    <div class="menu-item animate">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Steak">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Filet Mignon</h3>
+                                <span class="menu-item-price">$32.00</span>
+                            </div>
+                            <p>8oz grass-fed beef tenderloin with truffle mashed potatoes and seasonal vegetables</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-1">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1549521268-f3ad86e485e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Salmon">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Pan-Seared Salmon</h3>
+                                <span class="menu-item-price">$26.50</span>
+                            </div>
+                            <p>Wild-caught salmon with lemon beurre blanc, asparagus and quinoa pilaf</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-2">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Pasta">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Truffle Mushroom Risotto</h3>
+                                <span class="menu-item-price">$22.00</span>
+                            </div>
+                            <p>Creamy arborio rice with wild mushrooms, parmesan and white truffle oil</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-3">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Lamb">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Herb-Crusted Rack of Lamb</h3>
+                                <span class="menu-item-price">$34.00</span>
+                            </div>
+                            <p>New Zealand lamb with rosemary jus, roasted potatoes and glazed carrots</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <div class="menu-grid">
+                    <div class="menu-item animate">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Chocolate Cake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Molten Chocolate Lava Cake</h3>
+                                <span class="menu-item-price">$10.00</span>
+                            </div>
+                            <p>Warm chocolate cake with a molten center, served with vanilla bean ice cream</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-1">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1519671397794-51ad46325a79?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Cheesecake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">New York Cheesecake</h3>
+                                <span class="menu-item-price">$9.50</span>
+                            </div>
+                            <p>Creamy classic cheesecake with berry coulis and whipped cream</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-2">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1604977041787-49c2aaa2a6c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Creme Brulee">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Vanilla Crème Brûlée</h3>
+                                <span class="menu-item-price">$11.00</span>
+                            </div>
+                            <p>Classic custard dessert with crisp caramelized sugar topping</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-3">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Tiramisu">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Traditional Tiramisu</h3>
+                                <span class="menu-item-price">$10.50</span>
+                            </div>
+                            <p>Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="drinks">
+                <div class="menu-grid">
+                    <div class="menu-item animate">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Wine">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Premium Wine Selection</h3>
+                                <span class="menu-item-price">$12-25</span>
+                            </div>
+                            <p>Selection of domestic and international reds, whites and sparkling wines by the glass</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-1">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befa4699?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Cocktail">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Signature Cocktails</h3>
+                                <span class="menu-item-price">$14.00</span>
+                            </div>
+                            <p>Handcrafted cocktails using premium spirits and fresh ingredients</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-2">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Craft Beer">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Local Craft Beers</h3>
+                                <span class="menu-item-price">$7-10</span>
+                            </div>
+                            <p>Rotating selection of seasonal craft beers from local breweries</p>
+                        </div>
+                    </div>
+                    <div class="menu-item animate delay-3">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="Mocktail">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-head">
+                                <h3 class="menu-item-name">Artisan Mocktails</h3>
+                                <span class="menu-item-price">$8.00</span>
+                            </div>
+                            <p>Creative non-alcoholic beverages made with house-made syrups and fresh juices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foodpanda-like Page -->
+    <section id="foodpanda-like" class="page">
+        <div class="container-i">
+            <h2 class="food-delivery-title animate">Food Delivery</h2>
+
+            <div class="delivery-app">
+                <div class="app-text animate">
+                    <h2>Gourmet To Your Doorstep</h2>
+                    <p>Experience our acclaimed cuisine in the comfort of your home. We've partnered with premium
+                        delivery services to bring our food to you with the same care and quality as our dine-in
+                        experience.</p>
+
+                    <div class="app-features">
+                        <div class="app-feature animate delay-1">
+                            <div class="app-feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h3>Fast Delivery</h3>
+                                <p>Average delivery time of 30-45 minutes in our service area</p>
+                            </div>
+                        </div>
+                        <div class="app-feature animate delay-2">
+                            <div class="app-feature-icon">
+                                <i class="fas fa-temperature-low"></i>
+                            </div>
+                            <div>
+                                <h3>Premium Packaging</h3>
+                                <p>Special thermal container-is maintain ideal food temperature</p>
+                            </div>
+                        </div>
+                        <div class="app-feature animate delay-3">
+                            <div class="app-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3>Fresh Ingredients</h3>
+                                <p>Only the freshest ingredients prepared when you order</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animate delay-4 coming-soon-btn">
+                        <a href="#" class="btn">Order Now (Coming Soon)</a>
+                        <p class="coming-soon-note">Currently available for pickup only</p>
+                    </div>
+                </div>
+
+                <div class="food-video">
+                    <video controls autoplay loop width="100%"
+                        poster="https://via.placeholder.com/640x360.png?text=Food+Video">
+                        <source src="video/4169877-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="animate how-it-works">
+                <h2 class="working-title how-it-works-title">How It Works</h2>
+                <div class="features how-it-works-features">
+                    <div class="feature-item animate delay-1">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>1. Select Your Meal</h3>
+                        <p>Browse our extensive menu and customize your order</p>
+                    </div>
+                    <div class="feature-item animate delay-2">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>2. Enter Delivery Address</h3>
+                        <p>Tell us where to bring your delicious food</p>
+                    </div>
+                    <div class="feature-item animate delay-3">
+                        <div class="feature-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>3. Secure Payment</h3>
+                        <p>Pay easily with multiple payment options</p>
+                    </div>
+                    <div class="feature-item animate delay-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <h3>4. Track Your Order</h3>
+                        <p>Follow your meal in real-time to your doorstep</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="foodpapa" class="page">
+        <div class="container-i">
+            <h2 class="catering-title">Catering Services</h2>
+
+            <div class="about-container-i">
+                <div class="about-text animate">
+                    <h2>Exceptional Catering for Any Occasion</h2>
+                    <p>Let Gourmet Haven elevate your next event with our premium catering services. Whether it's an
+                        intimate dinner party, corporate gathering, or grand wedding celebration, we'll create
+                        unforgettable culinary experiences tailored to your vision.</p>
+                    <p>Our team of culinary experts will work with you to design a customized menu that delights your
+                        guests and exceeds expectations.</p>
+                </div>
+                <div class="about-img animate delay-1">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Catering Setup">
+                </div>
+            </div>
+
+            <div class="animate catering-packages">
+                <h2 class="our-catering-title catering-packages-title">Our Catering Packages</h2>
+                <div class="papa-features">
+                    <div class="papa-feature animate delay-1">
+                        <div class="papa-feature-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Weddings</h3>
+                        <p>Custom menus for your special day with professional service staff</p>
+                        <p class="package-price wedding">Starting at $75/person</p>
+                    </div>
+                    <div class="papa-feature animate delay-2">
+                        <div class="papa-feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Corporate Events</h3>
+                        <p>Impress clients and colleagues with gourmet catering solutions</p>
+                        <p class="package-price corporate">Starting at $35/person</p>
+                    </div>
+                    <div class="papa-feature animate delay-3">
+                        <div class="papa-feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Private Parties</h3>
+                        <p>Intimate gatherings with personalized menus and service</p>
+                        <p class="package-price private">Starting at $50/person</p>
+                    </div>
+                    <div class="papa-feature animate delay-4">
+                        <div class="papa-feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Drop-Off Catering</h3>
+                        <p>Delicious food delivered ready to serve for casual events</p>
+                        <p class="package-price dropoff">Starting at $25/person</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate catering-request-form">
+                <h2 class="request-title catering-request-title">Request a Quote</h2>
+                <p class="catering-request-desc">Complete the form below and our catering coordinator will contact you
+                    within 24 hours</p>
+
+                <form class="catering-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Event Type</label>
+                        <select id="event-type">
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="private">Private Party</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="message">Event Details</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group form-group-full form-submit">
+                        <button type="submit" class="btn">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container-i">
+          <div class="footer-about">
+            <a href="#" class="logo-i">Grill<span>Chemmy</span></a>
+            <p>Delicious food. Fast service. Great experience. Order your favorite meals anytime!</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="food-menu.html">Food Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://pk.linkedin.com/in/shayan-sheikh-dev"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/ShayanSheikh1936"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 GrillChemmy. All rights reserved. Developer Shayan Sheikh</p>
+        </div>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grill Chemmy Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container-i-fluid">
+  <div class="row">
+    <div class="col-md-2 sidebar d-none d-md-block">
+      <h4 class="p-3">Admin Panel</h4>
+      <a href="#">Dashboard</a>
+      <a href="#">Orders</a>
+      <a href="#">Menu Items</a>
+      <a href="#">Customers</a>
+<a href="#">Reports</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <div class="col-md-10 col-12 dashboard-content">
+      <nav class="navbar navbar-light bg-light mb-4">
+        <span class="navbar-brand">Welcome, Admin</span>
+      </nav>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card text-white bg-success">
+            <div class="card-body">
+              <h5 class="card-title">Today's Orders</h5>
+              <p class="card-text">125 Orders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-white bg-warning">
+            <div class="card-body">
+              <h5 class="card-title">Active Menu Items</h5>
+              <p class="card-text">58 Items</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-white bg-info">
+            <div class="card-body">
+              <h5 class="card-title">Registered Customers</h5>
+              <p class="card-text">830 Users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <h5>Recent Orders</h5>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Item</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>#0012</td><td>Shayan</td><td>Chicken Biryani</td><td>Delivered</td></tr>
+          <tr><td>#0013</td><td>Ali</td><td>Zinger Burger</td><td>Pending</td></tr>
+          <tr><td>#0014</td><td>Omar</td><td>Fries + Drink</td><td>Delivered</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

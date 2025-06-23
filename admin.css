@@ -1,0 +1,24 @@
+body {
+    background-color: #f8f9fa;
+  }
+  .sidebar {
+    height: 100vh;
+    background-color: #212529;
+    color: white;
+  }
+  .sidebar a {
+    color: #adb5bd;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+  .sidebar a:hover {
+    background-color: #343a40;
+    color: white;
+  }
+  .dashboard-content {
+    padding: 20px;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }

@@ -1,7 +1,7 @@
  // Import the Firebase modules
  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
- import { firebaseConfig } from './private.js';
+ import { firebaseConfig } from "private.js";
  
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
